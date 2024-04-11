@@ -4,6 +4,8 @@ you can choose either to play:
 + 1 vs 1
 + Human Player vs cmputer (the computer will choose randomly)
 + Human vs unbeatable Ai (using the minimax algorithm)
+### Tip
+To restart the game hit Shift .
 
 # Setup
 

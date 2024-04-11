@@ -1,9 +1,6 @@
 
 from typing import List, Tuple, Optional
 
-class NotGoodMove(Exception):
-    pass
-
 class TicTacToe:
 
     def __init__(self):
@@ -64,3 +61,7 @@ class TicTacToe:
                         if self.check_col(pos, player) or self.check_row(row, player):
                             return player, True
         return None, False
+# Errors 
+
+class NotGoodMove(Exception):
+    pass

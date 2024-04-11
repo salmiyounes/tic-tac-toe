@@ -1,7 +1,6 @@
 from typing import Tuple, List, Optional
 from random import choice
 import sys
-sys.path.append('/home/younes/Projects/game')
 from Logic.logic import TicTacToe
 
 class NormalPlayer:
@@ -22,7 +21,6 @@ class Computer:
         if not game.full_board():
             list_of_choices = [(i, j) for i in range(3) for j in range(3) if game.board[i][j] is None]
             row, pos = choice(list_of_choices)
-            #game.fill_board(row, pos, self.ai)
             return row, pos
         return (None, None)
 

@@ -39,7 +39,7 @@ class Play :
         self.main_loop()
         return None
 
-    def _message(self, player = None, Win = False, Draw = False, Retstart = False, game=False) :
+    def _message(self, player = None, Win = False, Draw = False, Retstart = False, game=False) -> None :
         if Win :
             SCREEN.fill(WHITE, (200, 650, 133, 34))
             msg = self.font.render('{} Wins !!'.format(player), True, BLACK)
@@ -49,6 +49,7 @@ class Play :
             SCREEN.blit(msg, (220, 650))
         elif Retstart and game :
             self.restart(game)
+        return None
 
     def draw_char(self, x : int , y : int, player : str, game : TicTacToe) -> None :
         assert ( (x in range(0, 3)) == True)
@@ -59,7 +60,7 @@ class Play :
             img = pygame.image.load(self.x_img)
         img = pygame.transform.scale(img, (BLOCK_SIZE, BLOCK_SIZE))
         SCREEN.blit(img, (y * BLOCK_SIZE, x * BLOCK_SIZE, BLOCK_SIZE, BLOCK_SIZE))
-        return 
+        return None
 
     def human_computer(self, player1 : str, player2 : str, game : TicTacToe) :
         curr_player = player1
@@ -134,7 +135,6 @@ class Play :
 
             if curr_player == player2 :
                 x, y = SmartComputer(curr_player).best_move(game)
-                print (x, y)
                 try :
                     if game.board[x][y] is None and not geame_over:
                         game.board[x][y] = curr_player

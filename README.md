@@ -10,6 +10,7 @@ you can choose either to play:
 ```bash
 git clone https://github.com/salmiyounes/tic-tac-toe.git
 cd tic-tac-toe/game
+pip install -r requirements.txt
 chmod +x run.py
 ./run.py
 ```

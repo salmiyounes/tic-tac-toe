@@ -1,5 +1,5 @@
 # A GUI tic-tac-toe game using the minimax Algorithm
-[https://raw.githubusercontent.com/salmiyounes/tic-tac-toe/main/game/tic-tac-toe.png]
+(https://raw.githubusercontent.com/salmiyounes/tic-tac-toe/main/game/tic-tac-toe.png)
 
 you can choose either to play:
 + 1 vs 1
